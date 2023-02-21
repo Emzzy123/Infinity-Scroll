@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bigelow+Rules&family=Open+Sans&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Bebas Neue', sans-serif;
+    background: whitesmoke;
+}
+
+h1{
+    text-align: center;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    font-size: 40px;
+    letter-spacing: 5px;
+}
+
+/*Loader*/
+.loader {
+    position: fixed;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.loader img {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Image-container */
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin:10px 30%;
+
+}
+
+/* Image */
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    margin-top: 5px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Media Queries */
+@media screen and (max-width: 600px) {
+    h1 {
+        font-size: 20px;
+    }
+    .image-container {
+        margin: 10px ;
+    }
+}
